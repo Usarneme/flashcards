@@ -27,11 +27,11 @@ app.post('/register', function(req, res) {
 app.use(express.static(path.join(__dirname, './build')))
 
 // All routes go to the Index.html file
-// The project uses React Router 4 to handle routing so it is not necessary to duplicate this in Express. 
-// RR4 will reroute to the appropriate URL as entered/navigated to within the app.
+// The project uses React Router to handle routing so it is not necessary to duplicate this in Express.
+// RR will reroute to the appropriate URL as entered/navigated to within the app.
 app.get('/*', function(req, res) {
   res.sendFile(path.join(__dirname, './build', 'index.html'))
 })
 
-// Your basic DBZ Port
+// Turn on and tune in
 app.listen(PORT, () => console.log("Flashy App Express Server listening on port "+PORT+". Type: "+env))

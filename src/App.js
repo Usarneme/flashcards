@@ -181,7 +181,7 @@ class App extends React.Component {
 
     // After loading... save deck state to localStorage
     this.saveToLocalStorage()
- 
+
     return (
       <div>
         <Helmet>
@@ -196,13 +196,13 @@ class App extends React.Component {
         <Switch>
           <Route exact path="/" render={() => <Home decks={this.state.decks} />} />
           <Route exact path="/decks" render={() => <Decks decks={this.state.decks} loadDefaultDecks={this.loadDefaultDecks} />} />
-          <Route path="/decks/:deckName" render={() => 
-            <DeckHome 
-              decks={this.state.decks} 
+          <Route path="/decks/:deckName" render={() =>
+            <DeckHome
+              decks={this.state.decks}
               saveToLocalStorage={this.saveToLocalStorage}
               addNewCard={this.addNewCard}
-              deleteCard={this.deleteCard} 
-              deleteDeck={this.deleteDeck} 
+              deleteCard={this.deleteCard}
+              deleteDeck={this.deleteDeck}
               updateDeck={this.updateDeck}
               currentDeckName={this.state.currentDeckName}
               setCurrentDeckNameTo={this.setCurrentDeckNameTo}

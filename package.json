@@ -1,24 +1,22 @@
 {
-  "name": "Flashcards",
-  "version": "0.1.0",
+  "name": "Usarneme's Flashcards",
+  "version": "0.2.0",
   "private": true,
   "dependencies": {
     "@babel/preset-env": "*",
-    "@sentry/browser": "^4.6.6",
-    "babel-core": "^6.26.3",
+    "babel-core": "*",
     "babel-loader": "*",
     "babel-preset-env": "*",
-    "dotenv": "^7.0.0",
-    "express": "^4.16.4",
-    "lodash": "^4.17.15",
-    "prop-types": "^15.7.2",
-    "pug": "^3.0.2",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-helmet": "^5.2.0",
-    "react-router": "^4.3.1",
-    "react-router-dom": "^4.3.1",
-    "react-scripts": "^4.0.3"
+    "dotenv": "*",
+    "express": "*",
+    "lodash": "*",
+    "prop-types": "*",
+    "react": "*",
+    "react-dom": "*",
+    "react-helmet": "*",
+    "react-router": "*",
+    "react-router-dom": "*",
+    "react-scripts": "*"
   },
   "scripts": {
     "start": "NODE_ENV=production node start.js",
@@ -42,7 +40,7 @@
   "author": "usarneme",
   "license": "MIT",
   "devDependencies": {
-    "babel-cli": "^6.18.0",
-    "babel-register": "^6.26.0"
+    "babel-cli": "*",
+    "babel-register": "*"
   }
 }
